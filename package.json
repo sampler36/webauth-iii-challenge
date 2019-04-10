@@ -6,12 +6,12 @@
   "scripts": {
     "server": "nodemon",
     "start": "node index.js",
-    "table1":"knex migrate:make createUsersTable",
-    "migrate":"knex migrate:latest",
+    "table1": "knex migrate:make createUsersTable",
+    "migrate": "knex migrate:latest",
     "seed1": "knex seed:make 01-users",
-    "runseed1":"knex seed:run 01-users",
-    "seed":"knex seed:run",
-    "rollback":"knex migrate:rollback"
+    "runseed1": "knex seed:run 01-users",
+    "seed": "knex seed:run",
+    "rollback": "knex migrate:rollback"
   },
   "keywords": [],
   "author": "Talent Antonio",
