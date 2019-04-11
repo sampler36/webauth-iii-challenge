@@ -1,15 +1,14 @@
 exports.up = function(knex) {
-    return knex.schema.createTable('users', (tbl) => {
-      tbl.increments();
+    return knex.schema.createTable('users', (users) => {
+      users.increments();
   
-      tbl
+      users
         .string('username', 128)
         .notNullable()
-        .unique();
-      tbl.string('password', 128).notNullable();
-
-      tbl.string('departments', 526)
-           .notNullable()
+        users.string('password', 128)
+             .notNullable();
+           
+        users.timestamps(true,true)
     });
   };
   
